@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hover-effects</title>
+
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+	
+}
+
+/*block-1*/
+.block1{
+	height:auto;
+	width:800px;	
+	margin:auto;
+	margin-top:20px;
+}
+img{
+	margin-left:50px;
+	border:7px solid #fff;
+	box-shadow:0px 0px 15px #000;
+	transition:all 1s ease-in-out;
+	cursor:pointer;
+}
+.block1 img:hover{
+	cursor:pointer;
+	border-radius:50%;
+}
+.oval{
+	border-radius:50%;
+}
+img.oval:hover{
+	border-radius:0;
+}
+
+/*block-2*/
+.block2{
+	height:auto;
+	width:800px;	
+	margin:auto;
+	margin-top:40px;
+}
+.block2 img{
+	margin-left:120px;
+}
+.block2 img:hover{
+	cursor:pointer;
+	border-radius:50%;
+}
+.circle{
+	border-radius:50%;
+	transition:all 1s ease-out;
+}
+img.circle:hover{
+	border-radius:0;
+}
+
+/*block-3*/
+.block3{
+	height:auto;
+	width:800px;	
+	margin:auto;
+	margin-top:80px;
+}
+.block3 img{
+	margin-left:180px;
+}
+.block3 img:hover{
+	transform:rotate(360deg) scale(1.5,1.5);
+}
+	
+/*block-4*/
+.block4{
+	height:auto;
+	width:1200px;	
+	margin:auto;
+	margin-top:80px;
+}
+.block4 img{
+	margin-left:100px;
+}
+.block4 img:hover{
+	transform:scale(-1,1);
+}
+img.flip:hover{
+	transform:scale(1,-1);
+}
+
+/*block-5*/
+.block5{
+	height:400px;
+	width:800px;	
+	margin:auto;
+	margin-top:40px;
+	background:url(images/swan-2144728__340.jpg) no-repeat;
+	background-size:cover;
+	border:7px solid #fff;
+	box-shadow:5px 5px 20px #333333;
+	transition:all 1s ease-in-out;
+}
+.block5:hover{
+	background:url(images/london-2164680__340.jpg);
+	background-size:cover;
+}
+
+/*block-6*/
+.block6{
+	height:200px;
+	width:800px;	
+	margin:auto;
+	margin-top:50px;
+	
+}
+.block6 img{
+	margin-left:180px;
+	
+}
+.matter{
+	height:200px;
+	width:450px;
+	margin-left:187px;
+	background-color:#FFFFFF;
+	opacity:0;
+	
+	transition:all;
+	transition-duration:1s;
+	transition-timing-function:ease-in-out;
+	
+}
+.block6:hover .matter{
+	transform:translateY(-207px);
+	opacity:0.6;
+}
+
+/*block-7*/
+.block7{
+	height:auto;
+	width:800px;	
+	margin:auto;
+	margin-top:80px;
+}
+img{
+	margin-left:50px;
+	border:7px solid #fff;
+	box-shadow:0px 0px 15px #000;
+	transition:all 1s ease-in-out;
+	cursor:pointer;
+}
+.block7 img:hover{
+	cursor:pointer;
+	border-radius:50%;
+	transform:rotate(360deg);
+}
+.oval-rotate{
+	border-radius:50%;
+}
+img.oval-rotate:hover{
+	border-radius:0;
+	transform:rotate(-360deg);
+}
+
+/*block-8*/
+.block8{
+	height:auto;
+	width:800px;	
+	margin:auto;
+	margin-top:50px;
+}
+.block8 img{
+	margin-left:120px;
+}
+.block8 img:hover{
+	cursor:pointer;
+	border-radius:50%;
+	transform:rotate(-360deg);
+}
+.circle-rotate{
+	border-radius:50%;
+	transition:all 1s ease-out;
+}
+img.circle-rotate:hover{
+	border-radius:0;
+	transform:rotate(360deg);
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="block1">
+<img src="images/girl-1403418__340.jpg" height="200px" width="300px" />
+<img class="oval" src="images/aroni-738302__340.jpg" height="200px" width="300px" />
+</div>
+
+<div class="block2">
+<img src="images/dog-2156781__340.jpg" height="200px" width="200px" />
+<img class="circle" src="images/portrait-1160487__340.jpg" height="200px" width="200px" />
+</div>
+
+<div class="block3">
+<img src="images/mountain-2158661__340.jpg" width="450px" height="200px" />
+</div>
+
+<div class="block4">
+<img src="images/panorama-2154194__340.jpg" width="450px" height="200px" />
+<img class="flip" src="images/pyramids-2159286__340.jpg" width="450px" height="200px" />
+</div>
+
+<div class="block5">
+
+</div>
+
+<div class="block6">
+<img src="images/mountain-2158661__340.jpg" width="450px" height="200px" />
+<div class="matter"></div>
+</div>
+
+<div class="block7">
+<img src="images/girl-1403418__340.jpg" height="200px" width="300px" />
+<img class="oval-rotate" src="images/aroni-738302__340.jpg" height="200px" width="300px" />
+</div>
+
+<div class="block8">
+<img src="images/dog-2156781__340.jpg" height="200px" width="200px" />
+<img class="circle-rotate" src="images/portrait-1160487__340.jpg" height="200px" width="200px" />
+</div>
+</body>
+</html>

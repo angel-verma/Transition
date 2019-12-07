@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>gallery-transform-transition</title>
+
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:rgba(102,204,102,.5);
+}
+
+h1{
+	text-align:center;
+	text-shadow:0px 0px 5px #666666;
+}
+.wrapper{
+	width:100%;
+	height:auto;
+	display:inline-block;
+}
+.box{
+	height:200px;
+	width:200px;
+	border-radius:50% 50%;
+	border:5px solid #fff;
+	box-shadow:10px 10px 20px #333333;
+	overflow:hidden;
+	float:left;
+	margin-left:100px;
+	margin-top:30px;
+}
+img{
+	border-radius:50% 50%;	
+}
+
+div.effect1{
+	background:url(images/01.jpg);
+	background-size:cover;
+}
+div.effect1 img{
+	transform:scale(1);
+	transition:all 1s ease-out;
+}
+div.effect1:hover img{
+	transform:scale(0);
+	cursor:pointer;
+}
+
+div.effect2{
+	background:url(images/5.jpg);
+	background-size:cover;
+}
+div.effect2 img{
+	transition:margin-top 1s ease-in-out;
+}
+div.effect2:hover img{
+	cursor:pointer;
+	margin-top:200px;
+}
+
+div.effect3 img{
+	transition:transform 2s ease-out;
+}
+div.effect3:hover img{
+	transform:rotate(360deg);
+}
+
+div.effect4{
+	background:url(images/3.jpg);
+	background-size:cover;
+}
+div.effect4 img{
+	transition:all 2s;
+	transition-timing-function:ease-in;
+}
+div.effect4:hover img{
+	margin-left:200px;
+}
+
+div.effect5{
+	background:url(images/05.jpg);
+	background-size:cover;
+}
+div.effect5 img{
+	transition:all 1s;
+	transition-timing-function:ease-in-out;
+}
+div.effect5:hover img{
+	transform:scale(-1,1);
+}
+
+div.effect6{
+	background:url(images/7.jpg);
+	background-size:cover;
+}
+div.effect6 img{
+	transition:all 1s;
+	transition-timing-function:ease-in;
+}
+div.effect6:hover img{
+	transform:scale(-1,-1);
+}
+
+div.effect7{
+	background:url(images/9.jpg);
+	background-size:cover;
+}
+div.effect7 img{
+	transition:all 1s;
+	transition-timing-function:ease-in;
+}
+div.effect7:hover img{
+	transform:scale(1,-1);
+}
+
+div.effect8{
+	background:url(images/05.jpg);
+	background-size:cover;
+}
+div.effect8 img{
+	transform:scale(0);
+	transition:transform 1s;
+	transition-timing-function:ease-in;
+}
+div.effect8:hover img{
+	transform:scale(1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>GALLERY</h1>
+
+<div class="wrapper">
+	<div class="box effect1">
+    	<img src="images/girls-602168__340.jpg" height="200px" width="200px"/>
+    </div>
+    
+    <div class="box effect2">
+    	<img src="images/portrait-1319951__340.jpg" height="200px" width="200px"/>
+    </div>
+    
+    <div class="box effect3">
+    	<img src="images/girl-1472185__340.jpg" height="200px" width="200px"/>
+    </div>
+    
+    <div class="box effect4">
+    	<img src="images/aroni-738302__340.jpg" height="200px" width="200px"/>
+    </div>
+    
+    <div class="box effect5">
+    	<img src="images/amrita.jpg" height="200px" width="200px" />
+    </div>
+    
+    <div class="box effect6">
+    	<img src="images/16.jpg" height="200px" width="200px" />
+    </div>
+    
+    <div class="box effect7">
+    	<img src="images/girl-1250679__340.jpg" height="200px" width="200px" />
+    </div>
+    
+     <div class="box effect8">
+    	<img src="images/13.jpg" height="200px" width="200px" />
+    </div>
+    
+</div>
+
+</body>
+</html>
